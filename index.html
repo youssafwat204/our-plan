@@ -8,135 +8,81 @@
 </head>
 <body>
 
-<header class="fade-in">
+<header>
   <h1>Our Plan</h1>
-  <p class="subtitle">
-    Netjr House — Scientifically Planned Affordable Housing in Fayoum
-  </p>
+  <p class="subtitle">Netjr House — Affordable, Climate-Responsive Housing</p>
 </header>
 
-<nav class="slide-down">
+<nav>
   <a href="#overview">Overview</a>
   <a href="#value">Value</a>
-  <a href="#model">Business Model</a>
+  <a href="#market">Market</a>
   <a href="#buy">Buy a Unit</a>
-  <a href="#founders">Founders</a>
 </nav>
 
-<section id="overview" class="fade-in">
+<section id="overview">
   <h2>Project Overview</h2>
   <p>
-    Netjr House is a scientifically planned housing project developed on a
-    134 m² plot, designed as a safe and durable replacement for informal
-    settlements in Al-Sa‘ayda Al-Qibliya Village, Fayoum Governorate.
+    Netjr House is a scientifically planned residential housing project designed
+    as a safe and durable alternative to informal settlements. The project targets
+    low- and middle-income families in Fayoum Governorate through a transparent,
+    government-aligned ownership model.
   </p>
 </section>
 
-<section id="value" class="fade-in">
-  <h2>Value Propositions</h2>
+<section id="value">
+  <h2>Why Netjr House</h2>
   <ul>
     <li>Scientifically planned housing units</li>
-    <li>Affordable housing for low- and middle-income families</li>
-    <li>Climate-responsive design suitable for Fayoum</li>
+    <li>Affordable long-term ownership</li>
+    <li>Durable construction materials</li>
+    <li>Design adapted to arid climatic conditions</li>
     <li>Improved infrastructure and living standards</li>
   </ul>
 </section>
 
-<section id="model" class="fade-in">
-  <h2>Business Model</h2>
-
-  <h3>Customer Segments</h3>
+<section id="market">
+  <h2>Target Buyers</h2>
   <ul>
-    <li>Low-income families</li>
-    <li>Middle-income families</li>
+    <li>Low-income households</li>
+    <li>Middle-income households</li>
     <li>Residents of informal settlements</li>
-    <li>Age group: 20–60 years</li>
-  </ul>
-
-  <h3>Key Partners</h3>
-  <ul>
-    <li>Ministry of Housing</li>
-    <li>Fayoum Governorate</li>
-    <li>Cement suppliers</li>
-    <li>Steel suppliers</li>
-    <li>Local contractors</li>
-  </ul>
-
-  <h3>Key Activities</h3>
-  <ul>
-    <li>Architectural design</li>
-    <li>Structural calculations</li>
-    <li>Construction and finishing</li>
-    <li>Quality inspection</li>
-  </ul>
-
-  <h3>Key Resources</h3>
-  <ul>
-    <li>Portland cement</li>
-    <li>Reinforced steel (12–16 mm)</li>
-    <li>Red bricks</li>
-    <li>Engineering team</li>
-    <li>Local workforce</li>
-  </ul>
-
-  <h3>Cost Structure</h3>
-  <ul>
-    <li>Cement: 90,000 EGP</li>
-    <li>Steel: 110,000 EGP</li>
-    <li>Bricks: 40,000 EGP</li>
-    <li>Labor: 120,000 EGP</li>
-    <li>Infrastructure: 60,000 EGP</li>
-  </ul>
-  <p><strong>Total Estimated Cost:</strong> ≈ 420,000 EGP</p>
-
-  <h3>Revenue Streams</h3>
-  <ul>
-    <li>Sale of housing units at subsidized prices</li>
-    <li>Long-term installment payments (20–25 years)</li>
-    <li>Government housing funding</li>
-    <li>Public–Private Partnership contributions</li>
+    <li>Age range: 20–60 years</li>
+    <li>Residents of Fayoum Governorate</li>
   </ul>
 </section>
 
-<section id="buy" class="fade-in">
-  <h2>Unit Purchasing</h2>
+<section id="buy">
+  <h2>Test a Buying Unit</h2>
+  <p>
+    This tool simulates housing eligibility and estimated monthly installments.
+    It represents a decision-support model, not a real transaction.
+  </p>
 
-  <div class="step active" id="step1">
-    <h3>Step 1 — Buyer Information</h3>
+  <form id="buyForm">
     <label>
-      Full Name
-      <input type="text" id="buyerName" required>
-    </label>
-    <label>
-      Monthly Income (EGP)
+      Monthly Household Income (EGP)
       <input type="number" id="income" required>
     </label>
-    <button onclick="goToStep2()">Continue</button>
-  </div>
 
-  <div class="step" id="step2">
-    <h3>Step 2 — Select a Unit</h3>
+    <label>
+      Payment Period (years)
+      <select id="years">
+        <option value="20">20 years</option>
+        <option value="25">25 years</option>
+      </select>
+    </label>
 
-    <div class="unit">
-      <p><strong>Standard Unit</strong><br>420,000 EGP — 25 years</p>
-      <button onclick="selectUnit(420000,25)">Purchase</button>
-    </div>
+    <button type="submit">Purchase</button>
+  </form>
 
-    <div class="unit">
-      <p><strong>Compact Unit</strong><br>360,000 EGP — 20 years</p>
-      <button onclick="selectUnit(360000,20)">Purchase</button>
-    </div>
-
-    <div class="unit">
-      <p><strong>Family Unit</strong><br>480,000 EGP — 25 years</p>
-      <button onclick="selectUnit(480000,25)">Purchase</button>
-    </div>
-  </div>
+  <div id="result"></div>
 </section>
 
-<section id="founders" class="fade-in">
+<section id="founders">
   <h2>Project Founders</h2>
-  <ul class="founders-list">
+  <p>Netjr House was founded and developed by:</p>
+  <ul>
     <li>Abdullatif Hassan</li>
     <li>Ahmed Mohamed</li>
     <li>Omar Badr</li>
@@ -149,14 +95,6 @@
   <p>Netjr House — Team 10112</p>
 </footer>
 
-<div id="modal">
-  <div class="modal-content scale-in">
-    <p id="modalText"></p>
-    <button onclick="closeModal()">Close</button>
-  </div>
-</div>
-
 <script src="script.js"></script>
 </body>
 </html>
-
