@@ -1,0 +1,147 @@
+:root {
+  --sand-yellow: #f2e6a7;
+  --light-green: #cfe3b4;
+  --olive-green: #8fa87a;
+  --earth-dark: #3f3a2f;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--sand-yellow);
+  color: var(--earth-dark);
+}
+
+header, nav, section, footer {
+  transition: all 0.4s ease;
+}
+
+header {
+  padding: 2.5rem;
+  background-color: var(--light-green);
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  background-color: var(--olive-green);
+  padding: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  max-width: 850px;
+  margin: auto;
+  padding: 2.5rem 2rem;
+}
+
+h2 {
+  border-bottom: 2px solid var(--light-green);
+}
+
+.step {
+  display: none;
+  animation: fadeUp 0.6s ease forwards;
+}
+
+.step.active {
+  display: block;
+}
+
+.unit {
+  border: 1px solid var(--olive-green);
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 6px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.unit:hover {
+  transform: translateY(-3px);
+  background-color: #f9f9f0;
+}
+
+button {
+  padding: 0.6rem 1rem;
+  background-color: var(--olive-green);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: var(--earth-dark);
+}
+
+/* Modal */
+#modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 1s ease forwards;
+}
+
+.slide-down {
+  animation: slideDown 0.8s ease forwards;
+}
+
+.scale-in {
+  animation: scaleIn 0.4s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeUp {
+  from { transform: translateY(15px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: var(--earth-dark);
+  color: white;
+}

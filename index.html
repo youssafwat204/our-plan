@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Plan | Netjr House</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="fade-in">
+  <h1>Our Plan</h1>
+  <p class="subtitle">Netjr House — Affordable, Climate-Responsive Housing</p>
+</header>
+
+<nav class="slide-down">
+  <a href="#overview">Overview</a>
+  <a href="#value">Value</a>
+  <a href="#market">Market</a>
+  <a href="#buy">Buy a Unit</a>
+</nav>
+
+<section id="overview" class="fade-in">
+  <h2>Project Overview</h2>
+  <p>
+    Netjr House is a scientifically planned residential housing project designed
+    as a durable alternative to informal settlements in Fayoum Governorate.
+  </p>
+</section>
+
+<section id="value" class="fade-in">
+  <h2>Why Netjr House</h2>
+  <ul>
+    <li>Scientifically planned housing units</li>
+    <li>Affordable long-term ownership</li>
+    <li>Climate-responsive design</li>
+    <li>Improved infrastructure</li>
+  </ul>
+</section>
+
+<section id="market" class="fade-in">
+  <h2>Target Buyers</h2>
+  <ul>
+    <li>Low- and middle-income households</li>
+    <li>Residents of informal settlements</li>
+    <li>Age range: 20–60 years</li>
+  </ul>
+</section>
+
+<section id="buy" class="fade-in">
+  <h2>Unit Purchasing Simulation</h2>
+  <p>This is a step-by-step decision-support simulation.</p>
+
+  <!-- STEP 1 -->
+  <div class="step active" id="step1">
+    <h3>Step 1 — Buyer Information</h3>
+    <label>
+      Full Name
+      <input type="text" id="buyerName" required>
+    </label>
+
+    <label>
+      Monthly Income (EGP)
+      <input type="number" id="income" required>
+    </label>
+
+    <button onclick="goToStep2()">Continue</button>
+  </div>
+
+  <!-- STEP 2 -->
+  <div class="step" id="step2">
+    <h3>Step 2 — Select a Unit</h3>
+
+    <div class="unit">
+      <p><strong>Standard Unit</strong><br>420,000 EGP — 25 years</p>
+      <button onclick="selectUnit(420000, 25)">Purchase</button>
+    </div>
+
+    <div class="unit">
+      <p><strong>Compact Unit</strong><br>360,000 EGP — 20 years</p>
+      <button onclick="selectUnit(360000, 20)">Purchase</button>
+    </div>
+
+    <div class="unit">
+      <p><strong>Family Unit</strong><br>480,000 EGP — 25 years</p>
+      <button onclick="selectUnit(480000, 25)">Purchase</button>
+    </div>
+  </div>
+</section>
+
+<section id="founders" class="fade-in">
+  <h2>Project Founders</h2>
+  <ul>
+    <li>Abdullatif Hassan</li>
+    <li>Ahmed Mohamed</li>
+    <li>Omar Badr</li>
+    <li>Yousef Mohamed</li>
+    <li>Ziad Hamed</li>
+  </ul>
+</section>
+
+<footer>
+  <p>Netjr House — Team 10112</p>
+</footer>
+
+<!-- Verification Modal -->
+<div id="modal">
+  <div class="modal-content scale-in">
+    <p id="modalText"></p>
+    <button onclick="closeModal()">Close</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
