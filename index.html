@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Plan | Netjr House</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="fade-down">
+  <h1>Our Plan</h1>
+  <p>Netjr House — Scientifically Planned Affordable Housing in Fayoum</p>
+</header>
+
+<nav class="fade-in">
+  <a href="#overview">Overview</a>
+  <a href="#value">Value</a>
+  <a href="#model">Business Model</a>
+  <a href="#buy">Buy a Unit</a>
+  <a href="#founders">Founders</a>
+</nav>
+
+<section id="overview" class="fade-up">
+  <h2>Project Overview</h2>
+  <p>
+    Netjr House is a scientifically planned housing project providing
+    safe and durable residential units on a <strong>134 m² plot</strong>.
+    The project is designed as a replacement for informal settlements in
+    <strong>Al-Sa‘ayda Al-Qibliya Village, Fayoum Governorate</strong>.
+  </p>
+</section>
+
+<section id="value" class="fade-up">
+  <h2>Value Propositions</h2>
+  <ul>
+    <li>Scientifically planned housing units on a 134 m² plot</li>
+    <li>Safe and durable replacement for informal settlements</li>
+    <li>Affordable housing for low- and middle-income families</li>
+    <li>Climate-responsive design suitable for Fayoum environment</li>
+    <li>Improved infrastructure and overall living standards</li>
+  </ul>
+</section>
+
+<section id="model" class="fade-up">
+  <h2>Business Model Canvas</h2>
+
+  <h3>Customer Segments</h3>
+  <ul>
+    <li>Low-income families</li>
+    <li>Middle-income families</li>
+    <li>Residents of informal settlements</li>
+    <li>Age group: 20–60 years</li>
+    <li>People of Al-Sa‘ayda Al-Qibliya Village, Fayoum</li>
+  </ul>
+
+  <h3>Key Resources</h3>
+  <ul>
+    <li>Portland cement</li>
+    <li>Reinforced steel (12–16 mm)</li>
+    <li>Red bricks</li>
+    <li>Engineering team</li>
+    <li>Local workforce</li>
+  </ul>
+
+  <h3>Key Partners</h3>
+  <ul>
+    <li>Ministry of Housing</li>
+    <li>Fayoum Governorate</li>
+    <li>Cement suppliers</li>
+    <li>Steel suppliers</li>
+    <li>Local contractors</li>
+  </ul>
+
+  <h3>Key Activities</h3>
+  <ul>
+    <li>Architectural design</li>
+    <li>Structural calculations</li>
+    <li>Construction and finishing</li>
+    <li>Quality inspection</li>
+  </ul>
+
+  <h3>Customer Relationships</h3>
+  <ul>
+    <li>One-time ownership relationship</li>
+    <li>Government-supervised allocation process</li>
+    <li>Trust-based relationship through transparency</li>
+    <li>No post-delivery technical support required</li>
+  </ul>
+
+  <h3>Channels</h3>
+  <ul>
+    <li>Government housing programs</li>
+    <li>Fayoum local authority registration offices</li>
+    <li>On-site application and housing allocation</li>
+    <li>Official public announcements</li>
+  </ul>
+
+  <h3>Cost Structure</h3>
+  <ul>
+    <li>Cement: 90,000 EGP</li>
+    <li>Steel: 110,000 EGP</li>
+    <li>Bricks: 40,000 EGP</li>
+    <li>Labor: 120,000 EGP</li>
+    <li>Infrastructure: 60,000 EGP</li>
+  </ul>
+  <p><strong>Total Estimated Cost:</strong> ≈ 420,000 EGP</p>
+
+  <h3>Revenue Streams</h3>
+  <ul>
+    <li>Sale of residential housing units at subsidized prices</li>
+    <li>Long-term installment payments (20–25 years)</li>
+    <li>Government housing funding</li>
+    <li>Public–Private Partnership contributions</li>
+  </ul>
+
+  <p><strong>Design Focus:</strong> Marketing</p>
+</section>
+
+<section id="buy" class="fade-up">
+  <h2>Unit Purchasing Process</h2>
+
+  <div id="step1" class="card slide-in">
+    <label>
+      Full Name<br>
+      <input type="text" id="buyerName">
+    </label><br><br>
+
+    <label>
+      Monthly Income (EGP)<br>
+      <input type="number" id="income">
+    </label><br><br>
+
+    <button onclick="goToStep2()">Continue</button>
+  </div>
+
+  <div id="step2" class="card slide-in" style="display:none;">
+    <h3>Select a Housing Unit</h3>
+
+    <button onclick="selectUnit(420000,25)">Standard Unit</button>
+    <p>
+      A balanced housing unit designed for small families, offering essential
+      living spaces with long-term affordability.
+    </p>
+
+    <button onclick="selectUnit(360000,20)">Compact Unit</button>
+    <p>
+      A cost-efficient unit suitable for individuals or couples, optimized for
+      lower income levels and reduced space requirements.
+    </p>
+
+    <button onclick="selectUnit(480000,25)">Family Unit</button>
+    <p>
+      A larger housing unit intended for extended families, providing increased
+      space and improved living comfort over a longer payment period.
+    </p>
+  </div>
+</section>
+
+<section id="founders" class="fade-up">
+  <h2>Project Founders</h2>
+  <ul>
+    <li>Abdullatif Hassan</li>
+    <li>Ahmed Mohamed</li>
+    <li>Omar Badr</li>
+    <li>Yousef Mohamed</li>
+    <li>Ziad Hamed</li>
+  </ul>
+</section>
+
+<footer class="fade-in">
+  <p>Netjr House — Team 10112</p>
+</footer>
+
+<div id="modal">
+  <div id="modalBox" class="scale-in">
+    <p id="modalText"></p>
+    <button onclick="closeModal()">Close</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

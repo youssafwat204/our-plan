@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2e6a7;
+  color: #3f3a2f;
+}
+
+header {
+  background-color: #cfe3b4;
+  padding: 2rem;
+  text-align: center;
+}
+
+nav {
+  background-color: #8fa87a;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 0.8rem;
+  text-decoration: none;
+}
+
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+}
+
+h2 {
+  border-bottom: 2px solid #cfe3b4;
+}
+
+button {
+  padding: 0.6rem 1rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+.card {
+  background: #fffbe6;
+  padding: 1.5rem;
+  border-radius: 6px;
+}
+
+/* Modal */
+#modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  justify-content: center;
+  align-items: center;
+}
+
+#modalBox {
+  background: white;
+  padding: 2rem;
+  border-radius: 6px;
+}
+
+/* Animations (cosmetic only) */
+.fade-in { animation: fadeIn 0.8s ease forwards; }
+.fade-up { animation: fadeUp 0.8s ease forwards; }
+.fade-down { animation: fadeDown 0.8s ease forwards; }
+.slide-in { animation: slideIn 0.6s ease forwards; }
+.scale-in { animation: scaleIn 0.4s ease forwards; }
+
+@keyframes fadeIn {
+  from { opacity: 0; } to { opacity: 1; }
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-15px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+footer {
+  background-color: #3f3a2f;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+}
