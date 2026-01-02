@@ -78,7 +78,7 @@ button:hover {
   background-color: var(--earth-dark);
 }
 
-/* FOUNDERS VISIBILITY FIX */
+/* Founders visibility */
 .founders-list {
   opacity: 1;
   list-style-type: square;
