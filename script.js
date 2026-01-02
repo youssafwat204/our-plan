@@ -22,7 +22,7 @@ function selectUnit(cost, years) {
 
   if (monthly <= limit) {
     message = `
-      Purchase Verified<br><br>
+      <strong>Purchase Verified</strong><br><br>
       Buyer: ${buyerName}<br>
       Unit Cost: ${cost} EGP<br>
       Payment Period: ${years} years<br>
@@ -30,9 +30,9 @@ function selectUnit(cost, years) {
     `;
   } else {
     message = `
-      Purchase Rejected<br><br>
+      <strong>Purchase Rejected</strong><br><br>
       Estimated installment (${monthly} EGP)
-      exceeds affordability threshold.
+      exceeds affordability limits.
     `;
   }
 
