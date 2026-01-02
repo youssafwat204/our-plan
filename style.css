@@ -21,10 +21,6 @@ body {
   color: var(--earth-dark);
 }
 
-header, nav, section, footer {
-  transition: all 0.4s ease;
-}
-
 header {
   padding: 2.5rem;
   background-color: var(--light-green);
@@ -56,7 +52,6 @@ h2 {
 
 .step {
   display: none;
-  animation: fadeUp 0.6s ease forwards;
 }
 
 .step.active {
@@ -68,12 +63,6 @@ h2 {
   padding: 1rem;
   margin: 1rem 0;
   border-radius: 6px;
-  transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.unit:hover {
-  transform: translateY(-3px);
-  background-color: #f9f9f0;
 }
 
 button {
@@ -87,6 +76,18 @@ button {
 
 button:hover {
   background-color: var(--earth-dark);
+}
+
+/* FOUNDERS VISIBILITY FIX */
+.founders-list {
+  opacity: 1;
+  list-style-type: square;
+  padding-left: 1.5rem;
+}
+
+.founders-list li {
+  opacity: 1;
+  margin: 0.4rem 0;
 }
 
 /* Modal */
@@ -108,11 +109,11 @@ button:hover {
 
 /* Animations */
 .fade-in {
-  animation: fadeIn 1s ease forwards;
+  animation: fadeIn 0.8s ease forwards;
 }
 
 .slide-down {
-  animation: slideDown 0.8s ease forwards;
+  animation: slideDown 0.6s ease forwards;
 }
 
 .scale-in {
@@ -126,11 +127,6 @@ button:hover {
 
 @keyframes slideDown {
   from { transform: translateY(-20px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
-}
-
-@keyframes fadeUp {
-  from { transform: translateY(15px); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
 }
 
